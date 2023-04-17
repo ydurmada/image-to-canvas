@@ -1,0 +1,52 @@
+<!doctype html>
+<title>Image To Canvas</title>
+<link rel="stylesheet" type="text/css" href="style.css"></link>
+
+<body>
+<div class="">
+    <label for="upload-file" class="custom-file-label">Choose Image</label>
+    <input type="file" class="custom-file-input" id="upload-file">
+</div>
+
+<br>
+
+<div id="imaging-editing-section">
+
+  <fieldset>
+    <legend>
+      new canvas size
+    </legend>
+    <div class="mb-2">
+      <label for="inputWidth">new width</label>
+      <input type="text" id="inputWidth">
+    </div>
+    <div class="mb-2">
+      <label for="inputHeight">new height</label>
+      <input type="text" id="inputHeight">
+    </div>
+    <button id="updateCanvasSize">update</button>
+  </fieldset>
+  <fieldset>
+    <legend>
+      new image size
+    </legend>
+    <div>
+      <input type="radio" id=30p name="percent" value=".3">30%</input>
+      <input type="radio" id=40p name="percent" value=".4">40%</input>
+      <input type="radio" id=50p name="percent" value=".5">50%</input>
+    </div>
+  </fieldset>
+
+  <!-- image container -->
+  <h1>Image</h1>
+    <div>
+      <div id="img-width"></div>
+      <div id="img-height"></div>
+    </div>
+    <canvas id="resized"></canvas>
+    <div>
+      <button id="download">Download Image</button>  
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
